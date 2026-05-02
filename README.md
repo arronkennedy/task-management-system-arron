@@ -1,7 +1,7 @@
 # Task Management System
 
-![CI Status](https://github.com/YOUR_USERNAME/task-management-system/actions/workflows/ci.yml/badge.svg)
-[![codecov](https://codecov.io/gh/YOUR_USERNAME/task-management-system/graph/badge.svg)](https://codecov.io/gh/YOUR_USERNAME/task-management-system)
+![CI Status](https://github.com/arronkennedy/task-management-system/actions/workflows/ci.yml/badge.svg)
+[![codecov](https://codecov.io/gh/arronkennedy/task-management-system/graph/badge.svg)](https://codecov.io/gh/arronkennedy/task-management-system)
 
 Aplikasi manajemen tugas berbasis web yang dibangun dengan **Laravel 11**, dilengkapi
 automated testing menggunakan **PHPUnit** dan **GitHub Actions CI**.
@@ -15,7 +15,7 @@ automated testing menggunakan **PHPUnit** dan **GitHub Actions CI**.
 ## Cara Menjalankan Aplikasi
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/task-management-system.git
+git clone https://github.com/arronkennedy/task-management-system.git
 cd task-management-system
 
 composer install
