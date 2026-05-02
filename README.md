@@ -2,6 +2,8 @@
 
 ![CI Status](https://github.com/arronkennedy/task-management-system-arron/actions/workflows/ci.yml/badge.svg)
 [![codecov](https://codecov.io/gh/arronkennedy/task-management-system-arron/graph/badge.svg)](https://codecov.io/gh/arronkennedy/task-management-system-arron)
+<img src="https://img.shields.io/badge/PHP-8.3%2B-777BB4?logo=php&logoColor=white" alt="PHP 8.3">
+<img src="https://img.shields.io/badge/Laravel-11-FF2D20?logo=laravel&logoColor=white" alt="Laravel 11">
 
 Aplikasi manajemen tugas berbasis web yang dibangun dengan **Laravel 11**, dilengkapi
 automated testing menggunakan **PHPUnit** dan **GitHub Actions CI**.
