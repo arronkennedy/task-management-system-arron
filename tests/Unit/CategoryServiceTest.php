@@ -56,4 +56,34 @@ class CategoryServiceTest extends TestCase
         $this->assertTrue($result);
         $this->assertDatabaseMissing('categories', ['id' => $category->id]);
     }
+
+    /** @test */
+    public function it_updates_category_successfully(): void
+    {
+        $category = Category::factory()->create([
+            'name'  => 'Old Name',
+            'color' => '#aaaaaa',
+        ]);
+
+        $updated = $this->service->updateCategory($category, [
+            'name'  => 'New Name',
+            'color' => '#bbbbbb',
+        ]);
+
+        $this->assertEquals('New Name', $updated->name);
+        $this->assertEquals('#bbbbbb', $updated->color);
+    }
+
+    /** @test */
+    public function it_throws_on_invalid_color_when_updating(): void
+    {
+        $category = Category::factory()->create();
+
+        $this->expectException(\InvalidArgumentException::class);
+
+        $this->service->updateCategory($category, [
+            'name'  => 'Test',
+            'color' => 'invalid-color',
+        ]);
+    }
 }
