@@ -63,7 +63,7 @@ Minimal 60% — diukur menggunakan Xdebug + laporan Clover/HTML.
 
 ## Pipeline CI (GitHub Actions)
 Dijalankan otomatis saat `push` dan `pull_request`:
-1. Setup PHP (8.2 & 8.3)
+1. Setup PHP (8.3)
 2. Install Composer dependencies
 3. Generate APP_KEY
 4. Jalankan seluruh test + generate coverage report
