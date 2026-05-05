@@ -47,8 +47,8 @@ php artisan test --filter=TaskServiceTest
 
 | Layer | Tool | Jumlah |
 |---|---|---|
-| Unit Tests | PHPUnit | 22 test case |
-| Integration / Feature Tests | PHPUnit + Laravel TestCase | 13 test case |
+| Unit Tests | PHPUnit | 29 test case |
+| Integration / Feature Tests | PHPUnit + Laravel TestCase | 20 test case |
 
 **Unit Tests** menguji logika bisnis secara terisolasi: `TaskService`, `CategoryService`,
 dan method pada model `Task` (isOverdue, isCompleted, priorityLevel, dsb.).
@@ -59,7 +59,7 @@ interaksi database, dan error handling.
 **Database Testing** menggunakan SQLite `:memory:` agar cepat dan terisolasi.
 
 ## Coverage Target
-Minimal 60% — diukur menggunakan Xdebug + laporan Clover/HTML.
+Tercapai 88.2% — melampaui target minimal 60%. Diukur menggunakan Xdebug + laporan Clover/HTML.
 
 ## Pipeline CI (GitHub Actions)
 Dijalankan otomatis saat `push` dan `pull_request`:
@@ -82,7 +82,7 @@ database/
 ├── migrations/           # Skema database
 └── seeders/              # DatabaseSeeder
 tests/
-├── Unit/                 # TaskServiceTest, TaskModelTest, CategoryServiceTest
-└── Feature/              # TaskControllerTest, CategoryControllerTest
+├── Unit/                 # TaskServiceTest, TaskModelTest, CategoryServiceTest, CategoryModelTest
+└── Feature/              # TaskControllerTest, CategoryControllerTest, DashboardControllerTest
 .github/workflows/ci.yml  # GitHub Actions pipeline
 ```
