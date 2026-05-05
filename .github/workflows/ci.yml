@@ -60,5 +60,5 @@ jobs:
         if: matrix.php == '8.3'
         with:
           file: coverage.xml
-          token: ${{ secrets.CODECOV_TOKEN }}  # ← tambahkan baris ini
+          token: ${{ secrets.CODECOV_TOKEN }}
           fail_ci_if_error: false
