@@ -19,7 +19,7 @@ class TaskController extends Controller
         $tasks      = $this->taskService->getFilteredTasks($filters);
         $categories = Category::all();
 
-        return view('tasks.index', compact('tasks', 'categories', 'filters'));
+        return view('tasks.indexxx', compact('tasks', 'categories', 'filters'));
     }
 
     public function create()
